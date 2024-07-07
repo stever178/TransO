@@ -9,6 +9,8 @@
 - `run_FB15k.py`
   - run the experiments on FB15k, including data handling, model training, and evaluation
 
+- `jobrun.sh`
+  - record the environment of the experiments, running experiments
 
 ***
 

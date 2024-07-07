@@ -1,5 +1,6 @@
 .idea
 .vscode/*
 *.pdb
+
 .ipynb*
-checkpoints/*
+checkpoints/*.pth
