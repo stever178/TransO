@@ -338,11 +338,15 @@ tt = time.strftime('%H:%M:%S', time.localtime())
 print("*" * star_num, f"{tt}, model {model_name} creating")
 
 if MODEL == TKRL or MODEL == TKRL_type_only:
-    TransE_ent_emb = torch.load(f"{model_path}TransE_ent_emb.pt").to(device)
-    TransE_rel_emb = torch.load(f"{model_path}TransE_rel_emb.pt").to(device)
+    try:
+        TransE_ent_emb = torch.load(f"{model_path}TransE_ent_emb.pt").to(device)
+        TransE_rel_emb = torch.load(f"{model_path}TransE_rel_emb.pt").to(device)
+    except:
+        TransE_ent_emb = None
+        TransE_rel_emb = None
     model = MODEL(DATA.ENT_NUM, DATA.REL_NUM,
                   DATA.TYPE_NUM, DATA.DOMAIN_NUM, rel2type_ht_tensor, rel2domain_ht_tensor,
-                  TransE_rel_emb=TransE_rel_emb, TransE_ent_emb=TransE_ent_emb
+                  TransE_rel_emb=TransE_rel_emb, TransE_ent_emb=TransE_ent_emb,
                   )
 elif MODEL == TransE:
     model = MODEL(DATA.ENT_NUM, DATA.REL_NUM, hidden_channels=DIM_SET.DIM_embedding)
