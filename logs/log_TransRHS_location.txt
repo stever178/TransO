@@ -1,0 +1,611 @@
+  2024-07-05 13:25:35, TransRHS training on cuda
+
+== Epoch: 0001, Loss: 1.37632128
+== Epoch: 0002, Loss: 1.10571674
+== Epoch: 0003, Loss: 0.99968284
+== Epoch: 0004, Loss: 1.00413167
+== Epoch: 0005, Loss: 0.98930502
+== Epoch: 0006, Loss: 0.96143445
+== Epoch: 0007, Loss: 0.92118211
+== Epoch: 0008, Loss: 0.89031482
+== Epoch: 0009, Loss: 0.87834280
+== Epoch: 0010, Loss: 0.85834730
+== Epoch: 0011, Loss: 0.81965498
+== Epoch: 0012, Loss: 0.79462968
+== Epoch: 0013, Loss: 0.78241030
+== Epoch: 0014, Loss: 0.76321854
+== Epoch: 0015, Loss: 0.73575417
+== Epoch: 0016, Loss: 0.71507680
+== Epoch: 0017, Loss: 0.70216913
+== Epoch: 0018, Loss: 0.67419177
+== Epoch: 0019, Loss: 0.66447393
+== Epoch: 0020, Loss: 0.63961267
+
+==== Test results of TransRHS 
+Mean Rank: 68.585, |MRR: 0.223, |Hits@1: 0.046, |Hits@3: 0.415, |Hits@10: 0.538
+
+== Epoch: 0021, Loss: 0.62792444
+== Epoch: 0022, Loss: 0.60020303
+== Epoch: 0023, Loss: 0.60207878
+== Epoch: 0024, Loss: 0.55152597
+== Epoch: 0025, Loss: 0.55591419
+== Epoch: 0026, Loss: 0.53006570
+== Epoch: 0027, Loss: 0.51337616
+== Epoch: 0028, Loss: 0.51133097
+== Epoch: 0029, Loss: 0.48999831
+== Epoch: 0030, Loss: 0.48182688
+== Epoch: 0031, Loss: 0.44628344
+== Epoch: 0032, Loss: 0.45678007
+== Epoch: 0033, Loss: 0.44417742
+== Epoch: 0034, Loss: 0.43592612
+== Epoch: 0035, Loss: 0.41093523
+== Epoch: 0036, Loss: 0.40701179
+== Epoch: 0037, Loss: 0.38908921
+== Epoch: 0038, Loss: 0.37124686
+== Epoch: 0039, Loss: 0.37251177
+== Epoch: 0040, Loss: 0.37953021
+
+==== Test results of TransRHS 
+Mean Rank: 61.708, |MRR: 0.429, |Hits@1: 0.354, |Hits@3: 0.492, |Hits@10: 0.631
+
+== Epoch: 0041, Loss: 0.34535090
+== Epoch: 0042, Loss: 0.34048967
+== Epoch: 0043, Loss: 0.34391624
+== Epoch: 0044, Loss: 0.34391539
+== Epoch: 0045, Loss: 0.33637195
+== Epoch: 0046, Loss: 0.31286709
+== Epoch: 0047, Loss: 0.30764484
+== Epoch: 0048, Loss: 0.30414841
+== Epoch: 0049, Loss: 0.29832499
+== Epoch: 0050, Loss: 0.28160282
+== Epoch: 0051, Loss: 0.27400638
+== Epoch: 0052, Loss: 0.25213263
+== Epoch: 0053, Loss: 0.27178162
+== Epoch: 0054, Loss: 0.24997648
+== Epoch: 0055, Loss: 0.25285591
+== Epoch: 0056, Loss: 0.24508037
+== Epoch: 0057, Loss: 0.22939105
+== Epoch: 0058, Loss: 0.23271679
+== Epoch: 0059, Loss: 0.21784889
+== Epoch: 0060, Loss: 0.20917120
+
+==== Test results of TransRHS 
+Mean Rank: 48.277, |MRR: 0.547, |Hits@1: 0.462, |Hits@3: 0.631, |Hits@10: 0.692
+
+== Epoch: 0061, Loss: 0.20733426
+== Epoch: 0062, Loss: 0.21911152
+== Epoch: 0063, Loss: 0.21548940
+== Epoch: 0064, Loss: 0.19511737
+== Epoch: 0065, Loss: 0.19629274
+== Epoch: 0066, Loss: 0.18338560
+== Epoch: 0067, Loss: 0.17713949
+== Epoch: 0068, Loss: 0.17410597
+== Epoch: 0069, Loss: 0.18962748
+== Epoch: 0070, Loss: 0.17351755
+== Epoch: 0071, Loss: 0.17927525
+== Epoch: 0072, Loss: 0.17058027
+== Epoch: 0073, Loss: 0.16691606
+== Epoch: 0074, Loss: 0.16522148
+== Epoch: 0075, Loss: 0.16342908
+== Epoch: 0076, Loss: 0.13541148
+== Epoch: 0077, Loss: 0.13898109
+== Epoch: 0078, Loss: 0.14475943
+== Epoch: 0079, Loss: 0.15908253
+== Epoch: 0080, Loss: 0.12074005
+
+==== Test results of TransRHS 
+Mean Rank: 40.969, |MRR: 0.595, |Hits@1: 0.554, |Hits@3: 0.692, |Hits@10: 0.723
+
+== Epoch: 0081, Loss: 0.13908745
+== Epoch: 0082, Loss: 0.14009849
+== Epoch: 0083, Loss: 0.12335876
+== Epoch: 0084, Loss: 0.12044063
+== Epoch: 0085, Loss: 0.12512683
+== Epoch: 0086, Loss: 0.11554305
+== Epoch: 0087, Loss: 0.12056666
+== Epoch: 0088, Loss: 0.10854327
+== Epoch: 0089, Loss: 0.11175702
+== Epoch: 0090, Loss: 0.10509808
+== Epoch: 0091, Loss: 0.09164178
+== Epoch: 0092, Loss: 0.08896399
+== Epoch: 0093, Loss: 0.10146644
+== Epoch: 0094, Loss: 0.09259876
+== Epoch: 0095, Loss: 0.10127975
+== Epoch: 0096, Loss: 0.08275944
+== Epoch: 0097, Loss: 0.08801436
+== Epoch: 0098, Loss: 0.08043081
+== Epoch: 0099, Loss: 0.08208300
+== Epoch: 0100, Loss: 0.07845057
+
+==== Test results of TransRHS 
+Mean Rank: 37.585, |MRR: 0.595, |Hits@1: 0.523, |Hits@3: 0.708, |Hits@10: 0.738
+
+== Epoch: 0101, Loss: 0.09236686
+== Epoch: 0102, Loss: 0.08499001
+== Epoch: 0103, Loss: 0.07848288
+== Epoch: 0104, Loss: 0.07435180
+== Epoch: 0105, Loss: 0.07544237
+== Epoch: 0106, Loss: 0.07143625
+== Epoch: 0107, Loss: 0.07048705
+== Epoch: 0108, Loss: 0.06992131
+== Epoch: 0109, Loss: 0.07530576
+== Epoch: 0110, Loss: 0.06931277
+== Epoch: 0111, Loss: 0.06228712
+== Epoch: 0112, Loss: 0.06623683
+== Epoch: 0113, Loss: 0.06894283
+== Epoch: 0114, Loss: 0.05577814
+== Epoch: 0115, Loss: 0.06067260
+== Epoch: 0116, Loss: 0.06692671
+== Epoch: 0117, Loss: 0.05702889
+== Epoch: 0118, Loss: 0.06632332
+== Epoch: 0119, Loss: 0.06415506
+== Epoch: 0120, Loss: 0.05449847
+
+==== Test results of TransRHS 
+Mean Rank: 34.231, |MRR: 0.590, |Hits@1: 0.523, |Hits@3: 0.708, |Hits@10: 0.738
+
+== Epoch: 0121, Loss: 0.05909057
+== Epoch: 0122, Loss: 0.05226373
+== Epoch: 0123, Loss: 0.05635881
+== Epoch: 0124, Loss: 0.05166036
+== Epoch: 0125, Loss: 0.05120680
+== Epoch: 0126, Loss: 0.05416221
+== Epoch: 0127, Loss: 0.05652273
+== Epoch: 0128, Loss: 0.05223033
+== Epoch: 0129, Loss: 0.05375790
+== Epoch: 0130, Loss: 0.05545395
+== Epoch: 0131, Loss: 0.05365218
+== Epoch: 0132, Loss: 0.05351031
+== Epoch: 0133, Loss: 0.04804525
+== Epoch: 0134, Loss: 0.04702318
+== Epoch: 0135, Loss: 0.03939062
+== Epoch: 0136, Loss: 0.05407774
+== Epoch: 0137, Loss: 0.04248502
+== Epoch: 0138, Loss: 0.05132359
+== Epoch: 0139, Loss: 0.03589561
+== Epoch: 0140, Loss: 0.04803347
+
+==== Test results of TransRHS 
+Mean Rank: 33.954, |MRR: 0.589, |Hits@1: 0.508, |Hits@3: 0.723, |Hits@10: 0.738
+
+== Epoch: 0141, Loss: 0.05269887
+== Epoch: 0142, Loss: 0.05413321
+== Epoch: 0143, Loss: 0.05255130
+== Epoch: 0144, Loss: 0.05064192
+== Epoch: 0145, Loss: 0.05271626
+== Epoch: 0146, Loss: 0.05970423
+== Epoch: 0147, Loss: 0.04663995
+== Epoch: 0148, Loss: 0.05422616
+== Epoch: 0149, Loss: 0.04869142
+== Epoch: 0150, Loss: 0.05037174
+== Epoch: 0151, Loss: 0.03989258
+== Epoch: 0152, Loss: 0.04638361
+== Epoch: 0153, Loss: 0.04567687
+== Epoch: 0154, Loss: 0.05329438
+== Epoch: 0155, Loss: 0.03591024
+== Epoch: 0156, Loss: 0.04543079
+== Epoch: 0157, Loss: 0.04204620
+== Epoch: 0158, Loss: 0.04569438
+== Epoch: 0159, Loss: 0.05734396
+== Epoch: 0160, Loss: 0.03798246
+
+==== Test results of TransRHS 
+Mean Rank: 36.077, |MRR: 0.601, |Hits@1: 0.508, |Hits@3: 0.708, |Hits@10: 0.738
+
+== Epoch: 0161, Loss: 0.03877399
+== Epoch: 0162, Loss: 0.04592444
+== Epoch: 0163, Loss: 0.04288024
+== Epoch: 0164, Loss: 0.03994952
+== Epoch: 0165, Loss: 0.03515664
+== Epoch: 0166, Loss: 0.04099893
+== Epoch: 0167, Loss: 0.03965581
+== Epoch: 0168, Loss: 0.04061875
+== Epoch: 0169, Loss: 0.03949235
+== Epoch: 0170, Loss: 0.04285540
+== Epoch: 0171, Loss: 0.03581367
+== Epoch: 0172, Loss: 0.04659015
+== Epoch: 0173, Loss: 0.03641855
+== Epoch: 0174, Loss: 0.04821963
+== Epoch: 0175, Loss: 0.05104797
+== Epoch: 0176, Loss: 0.04652156
+== Epoch: 0177, Loss: 0.04581529
+== Epoch: 0178, Loss: 0.04320900
+== Epoch: 0179, Loss: 0.03983511
+== Epoch: 0180, Loss: 0.03727399
+
+==== Test results of TransRHS 
+Mean Rank: 36.000, |MRR: 0.600, |Hits@1: 0.538, |Hits@3: 0.692, |Hits@10: 0.738
+
+== Epoch: 0181, Loss: 0.04188372
+== Epoch: 0182, Loss: 0.04262055
+== Epoch: 0183, Loss: 0.03709550
+== Epoch: 0184, Loss: 0.02990417
+== Epoch: 0185, Loss: 0.05148353
+== Epoch: 0186, Loss: 0.03934557
+== Epoch: 0187, Loss: 0.04611491
+== Epoch: 0188, Loss: 0.03095649
+== Epoch: 0189, Loss: 0.03836176
+== Epoch: 0190, Loss: 0.03821335
+== Epoch: 0191, Loss: 0.03652088
+== Epoch: 0192, Loss: 0.04341731
+== Epoch: 0193, Loss: 0.04815199
+== Epoch: 0194, Loss: 0.03141498
+== Epoch: 0195, Loss: 0.03824888
+== Epoch: 0196, Loss: 0.04065392
+== Epoch: 0197, Loss: 0.03193895
+== Epoch: 0198, Loss: 0.03794540
+== Epoch: 0199, Loss: 0.05011965
+== Epoch: 0200, Loss: 0.03635888
+
+==== Test results of TransRHS 
+Mean Rank: 35.615, |MRR: 0.599, |Hits@1: 0.523, |Hits@3: 0.708, |Hits@10: 0.738
+
+== Epoch: 0201, Loss: 0.04235542
+== Epoch: 0202, Loss: 0.03752469
+== Epoch: 0203, Loss: 0.04169079
+== Epoch: 0204, Loss: 0.04593069
+== Epoch: 0205, Loss: 0.04626697
+== Epoch: 0206, Loss: 0.03511111
+== Epoch: 0207, Loss: 0.04703720
+== Epoch: 0208, Loss: 0.04858650
+== Epoch: 0209, Loss: 0.03885676
+== Epoch: 0210, Loss: 0.03324723
+== Epoch: 0211, Loss: 0.04431599
+== Epoch: 0212, Loss: 0.04077892
+== Epoch: 0213, Loss: 0.03137509
+== Epoch: 0214, Loss: 0.03902475
+== Epoch: 0215, Loss: 0.04082541
+== Epoch: 0216, Loss: 0.04468405
+== Epoch: 0217, Loss: 0.03712290
+== Epoch: 0218, Loss: 0.03241861
+== Epoch: 0219, Loss: 0.03176401
+== Epoch: 0220, Loss: 0.05746014
+
+==== Test results of TransRHS 
+Mean Rank: 37.138, |MRR: 0.584, |Hits@1: 0.508, |Hits@3: 0.677, |Hits@10: 0.738
+
+== Epoch: 0221, Loss: 0.04064855
+== Epoch: 0222, Loss: 0.04707587
+== Epoch: 0223, Loss: 0.04159413
+== Epoch: 0224, Loss: 0.03436452
+== Epoch: 0225, Loss: 0.03496135
+== Epoch: 0226, Loss: 0.04403417
+== Epoch: 0227, Loss: 0.05030107
+== Epoch: 0228, Loss: 0.04669902
+== Epoch: 0229, Loss: 0.03810442
+== Epoch: 0230, Loss: 0.04383675
+== Epoch: 0231, Loss: 0.02890487
+== Epoch: 0232, Loss: 0.04465946
+== Epoch: 0233, Loss: 0.03929145
+== Epoch: 0234, Loss: 0.04105030
+== Epoch: 0235, Loss: 0.04796761
+== Epoch: 0236, Loss: 0.04683207
+== Epoch: 0237, Loss: 0.04723539
+== Epoch: 0238, Loss: 0.03827952
+== Epoch: 0239, Loss: 0.04370639
+== Epoch: 0240, Loss: 0.04129782
+
+==== Test results of TransRHS 
+Mean Rank: 38.200, |MRR: 0.597, |Hits@1: 0.523, |Hits@3: 0.708, |Hits@10: 0.738
+
+== Epoch: 0241, Loss: 0.03340794
+== Epoch: 0242, Loss: 0.03728794
+== Epoch: 0243, Loss: 0.04237786
+== Epoch: 0244, Loss: 0.03657538
+== Epoch: 0245, Loss: 0.03449798
+== Epoch: 0246, Loss: 0.03735778
+== Epoch: 0247, Loss: 0.03662295
+== Epoch: 0248, Loss: 0.03317469
+== Epoch: 0249, Loss: 0.03475617
+== Epoch: 0250, Loss: 0.03473418
+== Epoch: 0251, Loss: 0.04131497
+== Epoch: 0252, Loss: 0.02896943
+== Epoch: 0253, Loss: 0.03461774
+== Epoch: 0254, Loss: 0.02545205
+== Epoch: 0255, Loss: 0.02867512
+== Epoch: 0256, Loss: 0.03761204
+== Epoch: 0257, Loss: 0.02697972
+== Epoch: 0258, Loss: 0.03700369
+== Epoch: 0259, Loss: 0.03180001
+== Epoch: 0260, Loss: 0.04035153
+
+==== Test results of TransRHS 
+Mean Rank: 36.338, |MRR: 0.585, |Hits@1: 0.492, |Hits@3: 0.692, |Hits@10: 0.738
+
+== Epoch: 0261, Loss: 0.03094615
+== Epoch: 0262, Loss: 0.03596861
+== Epoch: 0263, Loss: 0.03354844
+== Epoch: 0264, Loss: 0.03900450
+== Epoch: 0265, Loss: 0.03144881
+== Epoch: 0266, Loss: 0.05011013
+== Epoch: 0267, Loss: 0.02536836
+== Epoch: 0268, Loss: 0.03365938
+== Epoch: 0269, Loss: 0.03376164
+== Epoch: 0270, Loss: 0.02393521
+== Epoch: 0271, Loss: 0.03778052
+== Epoch: 0272, Loss: 0.02956314
+== Epoch: 0273, Loss: 0.03518304
+== Epoch: 0274, Loss: 0.02560902
+== Epoch: 0275, Loss: 0.03418560
+== Epoch: 0276, Loss: 0.04372828
+== Epoch: 0277, Loss: 0.03786171
+== Epoch: 0278, Loss: 0.03146376
+== Epoch: 0279, Loss: 0.03138222
+== Epoch: 0280, Loss: 0.03816345
+
+==== Test results of TransRHS 
+Mean Rank: 36.754, |MRR: 0.600, |Hits@1: 0.523, |Hits@3: 0.708, |Hits@10: 0.738
+
+== Epoch: 0281, Loss: 0.03930369
+== Epoch: 0282, Loss: 0.02865277
+== Epoch: 0283, Loss: 0.02681861
+== Epoch: 0284, Loss: 0.03613306
+== Epoch: 0285, Loss: 0.03468215
+== Epoch: 0286, Loss: 0.02435145
+== Epoch: 0287, Loss: 0.03640907
+== Epoch: 0288, Loss: 0.02378528
+== Epoch: 0289, Loss: 0.03760020
+== Epoch: 0290, Loss: 0.03968806
+== Epoch: 0291, Loss: 0.03747485
+== Epoch: 0292, Loss: 0.03175274
+== Epoch: 0293, Loss: 0.03660213
+== Epoch: 0294, Loss: 0.03105022
+== Epoch: 0295, Loss: 0.02471784
+== Epoch: 0296, Loss: 0.04221137
+== Epoch: 0297, Loss: 0.03061620
+== Epoch: 0298, Loss: 0.02375605
+== Epoch: 0299, Loss: 0.03305012
+== Epoch: 0300, Loss: 0.03405051
+
+==== Test results of TransRHS 
+Mean Rank: 37.169, |MRR: 0.606, |Hits@1: 0.538, |Hits@3: 0.708, |Hits@10: 0.738
+
+== Epoch: 0301, Loss: 0.02637934
+== Epoch: 0302, Loss: 0.02869544
+== Epoch: 0303, Loss: 0.02445666
+== Epoch: 0304, Loss: 0.03556230
+== Epoch: 0305, Loss: 0.03026753
+== Epoch: 0306, Loss: 0.03965948
+== Epoch: 0307, Loss: 0.03128120
+== Epoch: 0308, Loss: 0.03296796
+== Epoch: 0309, Loss: 0.03210045
+== Epoch: 0310, Loss: 0.04104473
+== Epoch: 0311, Loss: 0.03331666
+== Epoch: 0312, Loss: 0.02913096
+== Epoch: 0313, Loss: 0.03299760
+== Epoch: 0314, Loss: 0.03461492
+== Epoch: 0315, Loss: 0.03797012
+== Epoch: 0316, Loss: 0.04014166
+== Epoch: 0317, Loss: 0.03313114
+== Epoch: 0318, Loss: 0.03785970
+== Epoch: 0319, Loss: 0.03615214
+== Epoch: 0320, Loss: 0.03706524
+
+==== Test results of TransRHS 
+Mean Rank: 36.631, |MRR: 0.598, |Hits@1: 0.523, |Hits@3: 0.708, |Hits@10: 0.738
+
+== Epoch: 0321, Loss: 0.02875393
+== Epoch: 0322, Loss: 0.03605966
+== Epoch: 0323, Loss: 0.03454876
+== Epoch: 0324, Loss: 0.03769432
+== Epoch: 0325, Loss: 0.02648715
+== Epoch: 0326, Loss: 0.02191475
+== Epoch: 0327, Loss: 0.02669788
+== Epoch: 0328, Loss: 0.03136119
+== Epoch: 0329, Loss: 0.02560284
+== Epoch: 0330, Loss: 0.03071027
+== Epoch: 0331, Loss: 0.02796486
+== Epoch: 0332, Loss: 0.02917754
+== Epoch: 0333, Loss: 0.02351502
+== Epoch: 0334, Loss: 0.02356434
+== Epoch: 0335, Loss: 0.03405873
+== Epoch: 0336, Loss: 0.03443368
+== Epoch: 0337, Loss: 0.03849392
+== Epoch: 0338, Loss: 0.02828292
+== Epoch: 0339, Loss: 0.03866990
+== Epoch: 0340, Loss: 0.02051539
+
+==== Test results of TransRHS 
+Mean Rank: 37.631, |MRR: 0.609, |Hits@1: 0.538, |Hits@3: 0.708, |Hits@10: 0.738
+
+== Epoch: 0341, Loss: 0.03774205
+== Epoch: 0342, Loss: 0.02696088
+== Epoch: 0343, Loss: 0.03943432
+== Epoch: 0344, Loss: 0.02777266
+== Epoch: 0345, Loss: 0.04474332
+== Epoch: 0346, Loss: 0.03282980
+== Epoch: 0347, Loss: 0.02419632
+== Epoch: 0348, Loss: 0.03722370
+== Epoch: 0349, Loss: 0.03083836
+== Epoch: 0350, Loss: 0.03394097
+== Epoch: 0351, Loss: 0.03274214
+== Epoch: 0352, Loss: 0.02684691
+== Epoch: 0353, Loss: 0.04084959
+== Epoch: 0354, Loss: 0.02851936
+== Epoch: 0355, Loss: 0.02850970
+== Epoch: 0356, Loss: 0.03795338
+== Epoch: 0357, Loss: 0.03796566
+== Epoch: 0358, Loss: 0.03842745
+== Epoch: 0359, Loss: 0.03701079
+== Epoch: 0360, Loss: 0.03541406
+
+==== Test results of TransRHS 
+Mean Rank: 38.985, |MRR: 0.617, |Hits@1: 0.569, |Hits@3: 0.708, |Hits@10: 0.738
+
+== Epoch: 0361, Loss: 0.02952084
+== Epoch: 0362, Loss: 0.03808534
+== Epoch: 0363, Loss: 0.03482711
+== Epoch: 0364, Loss: 0.02579326
+== Epoch: 0365, Loss: 0.03656265
+== Epoch: 0366, Loss: 0.03079489
+== Epoch: 0367, Loss: 0.03486222
+== Epoch: 0368, Loss: 0.02727026
+== Epoch: 0369, Loss: 0.02778768
+== Epoch: 0370, Loss: 0.03642366
+== Epoch: 0371, Loss: 0.02967061
+== Epoch: 0372, Loss: 0.03088107
+== Epoch: 0373, Loss: 0.02660609
+== Epoch: 0374, Loss: 0.02461067
+== Epoch: 0375, Loss: 0.03051419
+== Epoch: 0376, Loss: 0.03442467
+== Epoch: 0377, Loss: 0.03054940
+== Epoch: 0378, Loss: 0.03703326
+== Epoch: 0379, Loss: 0.02654081
+== Epoch: 0380, Loss: 0.02923798
+
+==== Test results of TransRHS 
+Mean Rank: 41.769, |MRR: 0.608, |Hits@1: 0.569, |Hits@3: 0.708, |Hits@10: 0.723
+
+== Epoch: 0381, Loss: 0.02848376
+== Epoch: 0382, Loss: 0.03142722
+== Epoch: 0383, Loss: 0.03047599
+== Epoch: 0384, Loss: 0.03028790
+== Epoch: 0385, Loss: 0.03120743
+== Epoch: 0386, Loss: 0.02526412
+== Epoch: 0387, Loss: 0.02065532
+== Epoch: 0388, Loss: 0.03544043
+== Epoch: 0389, Loss: 0.04065277
+== Epoch: 0390, Loss: 0.03610704
+== Epoch: 0391, Loss: 0.02993558
+== Epoch: 0392, Loss: 0.02766371
+== Epoch: 0393, Loss: 0.03476670
+== Epoch: 0394, Loss: 0.04434151
+== Epoch: 0395, Loss: 0.02321267
+== Epoch: 0396, Loss: 0.03601000
+== Epoch: 0397, Loss: 0.03628896
+== Epoch: 0398, Loss: 0.01973140
+== Epoch: 0399, Loss: 0.02268276
+== Epoch: 0400, Loss: 0.02343087
+
+==== Test results of TransRHS 
+Mean Rank: 43.800, |MRR: 0.601, |Hits@1: 0.569, |Hits@3: 0.708, |Hits@10: 0.738
+
+== Epoch: 0401, Loss: 0.02469211
+== Epoch: 0402, Loss: 0.03490975
+== Epoch: 0403, Loss: 0.02966926
+== Epoch: 0404, Loss: 0.02028358
+== Epoch: 0405, Loss: 0.02359185
+== Epoch: 0406, Loss: 0.03397211
+== Epoch: 0407, Loss: 0.02745589
+== Epoch: 0408, Loss: 0.03317943
+== Epoch: 0409, Loss: 0.03146617
+== Epoch: 0410, Loss: 0.02994529
+== Epoch: 0411, Loss: 0.03785950
+== Epoch: 0412, Loss: 0.02741547
+== Epoch: 0413, Loss: 0.02882710
+== Epoch: 0414, Loss: 0.02901762
+== Epoch: 0415, Loss: 0.03281284
+== Epoch: 0416, Loss: 0.02346424
+== Epoch: 0417, Loss: 0.01950576
+== Epoch: 0418, Loss: 0.04005008
+== Epoch: 0419, Loss: 0.02592207
+== Epoch: 0420, Loss: 0.02690413
+
+==== Test results of TransRHS 
+Mean Rank: 44.200, |MRR: 0.596, |Hits@1: 0.538, |Hits@3: 0.708, |Hits@10: 0.738
+
+== Epoch: 0421, Loss: 0.02789313
+== Epoch: 0422, Loss: 0.02963295
+== Epoch: 0423, Loss: 0.03301854
+== Epoch: 0424, Loss: 0.02692467
+== Epoch: 0425, Loss: 0.02523282
+== Epoch: 0426, Loss: 0.02707719
+== Epoch: 0427, Loss: 0.03038889
+== Epoch: 0428, Loss: 0.02776714
+== Epoch: 0429, Loss: 0.03172776
+== Epoch: 0430, Loss: 0.02666413
+== Epoch: 0431, Loss: 0.02124053
+== Epoch: 0432, Loss: 0.02897877
+== Epoch: 0433, Loss: 0.02904781
+== Epoch: 0434, Loss: 0.02490068
+== Epoch: 0435, Loss: 0.02638183
+== Epoch: 0436, Loss: 0.01902916
+== Epoch: 0437, Loss: 0.02879127
+== Epoch: 0438, Loss: 0.02248917
+== Epoch: 0439, Loss: 0.02508392
+== Epoch: 0440, Loss: 0.02901760
+
+==== Test results of TransRHS 
+Mean Rank: 46.785, |MRR: 0.602, |Hits@1: 0.523, |Hits@3: 0.723, |Hits@10: 0.738
+
+== Epoch: 0441, Loss: 0.03748635
+== Epoch: 0442, Loss: 0.02616562
+== Epoch: 0443, Loss: 0.03428531
+== Epoch: 0444, Loss: 0.02207366
+== Epoch: 0445, Loss: 0.03158219
+== Epoch: 0446, Loss: 0.02482376
+== Epoch: 0447, Loss: 0.02879487
+== Epoch: 0448, Loss: 0.02139265
+== Epoch: 0449, Loss: 0.02687815
+== Epoch: 0450, Loss: 0.03004840
+== Epoch: 0451, Loss: 0.03211504
+== Epoch: 0452, Loss: 0.03122018
+== Epoch: 0453, Loss: 0.03590262
+== Epoch: 0454, Loss: 0.04431624
+== Epoch: 0455, Loss: 0.02993669
+== Epoch: 0456, Loss: 0.01984864
+== Epoch: 0457, Loss: 0.02932554
+== Epoch: 0458, Loss: 0.02898234
+== Epoch: 0459, Loss: 0.02992773
+== Epoch: 0460, Loss: 0.04223262
+
+==== Test results of TransRHS 
+Mean Rank: 45.323, |MRR: 0.591, |Hits@1: 0.492, |Hits@3: 0.723, |Hits@10: 0.738
+
+== Epoch: 0461, Loss: 0.03104605
+== Epoch: 0462, Loss: 0.03412275
+== Epoch: 0463, Loss: 0.02502462
+== Epoch: 0464, Loss: 0.02799452
+== Epoch: 0465, Loss: 0.02555591
+== Epoch: 0466, Loss: 0.02612194
+== Epoch: 0467, Loss: 0.02569950
+== Epoch: 0468, Loss: 0.02679423
+== Epoch: 0469, Loss: 0.02072230
+== Epoch: 0470, Loss: 0.02291030
+== Epoch: 0471, Loss: 0.03070364
+== Epoch: 0472, Loss: 0.03751539
+== Epoch: 0473, Loss: 0.02926056
+== Epoch: 0474, Loss: 0.02990731
+== Epoch: 0475, Loss: 0.02729323
+== Epoch: 0476, Loss: 0.02655269
+== Epoch: 0477, Loss: 0.03120344
+== Epoch: 0478, Loss: 0.02539049
+== Epoch: 0479, Loss: 0.03466572
+== Epoch: 0480, Loss: 0.03061736
+
+==== Test results of TransRHS 
+Mean Rank: 46.938, |MRR: 0.598, |Hits@1: 0.508, |Hits@3: 0.723, |Hits@10: 0.738
+
+== Epoch: 0481, Loss: 0.02037509
+== Epoch: 0482, Loss: 0.02821679
+== Epoch: 0483, Loss: 0.01968845
+== Epoch: 0484, Loss: 0.02194960
+== Epoch: 0485, Loss: 0.03333519
+== Epoch: 0486, Loss: 0.02587978
+== Epoch: 0487, Loss: 0.02075584
+== Epoch: 0488, Loss: 0.03794576
+== Epoch: 0489, Loss: 0.03022034
+== Epoch: 0490, Loss: 0.03234047
+== Epoch: 0491, Loss: 0.02579351
+== Epoch: 0492, Loss: 0.02583579
+== Epoch: 0493, Loss: 0.02676178
+== Epoch: 0494, Loss: 0.02425875
+== Epoch: 0495, Loss: 0.03250054
+== Epoch: 0496, Loss: 0.01924429
+== Epoch: 0497, Loss: 0.03160978
+== Epoch: 0498, Loss: 0.02972356
+== Epoch: 0499, Loss: 0.02663499
+== Epoch: 0500, Loss: 0.02877934
+== Epoch: 0500, Loss: 0.02877934
+	Valid results of TransRHS using initial lr 0.01
+Mean Rank: 30.154, | MRR: 0.484, | Hits@1: 0.462, | Hits@3: 0.585, | Hits@10: 0.677
+
+==== Test results of TransRHS 
+Mean Rank: 45.415, |MRR: 0.602, |Hits@1: 0.492, |Hits@3: 0.723, |Hits@10: 0.738
+
+
+==== 2024-07-05 13:25:45, TransRHS testing on cuda==== Test result of TransRHS, time is 2024-07-05 13:25:46, 
+Mean Rank: 45.415, | MRR: 0.602, | Hits@1: 0.492 | Hits@3: 0.723 | Hits@10: 0.738
+
+==== 2024-07-06 03:56:59, TransRHS testing on cuda==== Test result of TransRHS, time is 2024-07-06 03:56:59, 
+Mean Rank: 45.415, | MRR: 0.602, | Hits@1: 0.492 | Hits@3: 0.723 | Hits@10: 0.738

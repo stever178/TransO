@@ -1,0 +1,2 @@
+concept:citycapitalofcountry	concept:citylocatedincountry
+concept:citylocatedinstate	concept:statehascapital

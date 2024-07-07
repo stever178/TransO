@@ -1,0 +1,227 @@
+== Epoch: 0005, Loss: 0.94826176
+--- Valid results, using initial lr 0.001
+Mean Rank: 202.677, | MRR: 0.060, | Hits@1: 0.000, | Hits@3: 0.092, | Hits@10: 0.154
+== Epoch: 0010, Loss: 0.91698477
+--- Valid results, using initial lr 0.001
+Mean Rank: 190.354, | MRR: 0.117, | Hits@1: 0.077, | Hits@3: 0.123, | Hits@10: 0.154
+== Epoch: 0015, Loss: 0.88866426
+--- Valid results, using initial lr 0.001
+Mean Rank: 183.738, | MRR: 0.133, | Hits@1: 0.108, | Hits@3: 0.123, | Hits@10: 0.185
+== Epoch: 0020, Loss: 0.86126682
+--- Valid results, using initial lr 0.001
+Mean Rank: 176.477, | MRR: 0.136, | Hits@1: 0.108, | Hits@3: 0.123, | Hits@10: 0.185
+==== Test results, 
+Mean Rank: 163.108, |MRR: 0.089, |Hits@1: 0.077, |Hits@3: 0.077, |Hits@10: 0.092
+
+== Epoch: 0025, Loss: 0.84403516
+--- Valid results, using initial lr 0.001
+Mean Rank: 170.108, | MRR: 0.144, | Hits@1: 0.108, | Hits@3: 0.154, | Hits@10: 0.215
+== Epoch: 0030, Loss: 0.81955424
+--- Valid results, using initial lr 0.001
+Mean Rank: 162.462, | MRR: 0.150, | Hits@1: 0.108, | Hits@3: 0.154, | Hits@10: 0.246
+== Epoch: 0035, Loss: 0.80695621
+--- Valid results, using initial lr 0.001
+Mean Rank: 158.954, | MRR: 0.151, | Hits@1: 0.108, | Hits@3: 0.154, | Hits@10: 0.231
+== Epoch: 0040, Loss: 0.79511409
+--- Valid results, using initial lr 0.001
+Mean Rank: 151.123, | MRR: 0.156, | Hits@1: 0.108, | Hits@3: 0.169, | Hits@10: 0.231
+==== Test results, 
+Mean Rank: 141.015, |MRR: 0.100, |Hits@1: 0.077, |Hits@3: 0.092, |Hits@10: 0.123
+
+== Epoch: 0045, Loss: 0.78460516
+--- Valid results, using initial lr 0.001
+Mean Rank: 143.400, | MRR: 0.161, | Hits@1: 0.108, | Hits@3: 0.200, | Hits@10: 0.246
+== Epoch: 0050, Loss: 0.73652794
+--- Valid results, using initial lr 0.001
+Mean Rank: 136.308, | MRR: 0.163, | Hits@1: 0.108, | Hits@3: 0.185, | Hits@10: 0.246
+== Epoch: 0055, Loss: 0.73533497
+--- Valid results, using initial lr 0.001
+Mean Rank: 124.954, | MRR: 0.170, | Hits@1: 0.108, | Hits@3: 0.200, | Hits@10: 0.246
+== Epoch: 0060, Loss: 0.71291018
+--- Valid results, using initial lr 0.001
+Mean Rank: 121.462, | MRR: 0.172, | Hits@1: 0.108, | Hits@3: 0.200, | Hits@10: 0.262
+==== Test results, 
+Mean Rank: 126.677, |MRR: 0.111, |Hits@1: 0.077, |Hits@3: 0.108, |Hits@10: 0.154
+
+== Epoch: 0065, Loss: 0.69485702
+--- Valid results, using initial lr 0.001
+Mean Rank: 112.923, | MRR: 0.176, | Hits@1: 0.108, | Hits@3: 0.215, | Hits@10: 0.277
+== Epoch: 0070, Loss: 0.67890109
+--- Valid results, using initial lr 0.001
+Mean Rank: 107.231, | MRR: 0.178, | Hits@1: 0.108, | Hits@3: 0.215, | Hits@10: 0.277
+== Epoch: 0075, Loss: 0.66473381
+--- Valid results, using initial lr 0.001
+Mean Rank: 99.754, | MRR: 0.181, | Hits@1: 0.108, | Hits@3: 0.215, | Hits@10: 0.292
+== Epoch: 0080, Loss: 0.63894664
+--- Valid results, using initial lr 0.001
+Mean Rank: 94.277, | MRR: 0.183, | Hits@1: 0.108, | Hits@3: 0.215, | Hits@10: 0.292
+==== Test results, 
+Mean Rank: 112.862, |MRR: 0.134, |Hits@1: 0.077, |Hits@3: 0.138, |Hits@10: 0.231
+
+== Epoch: 0085, Loss: 0.62075879
+--- Valid results, using initial lr 0.001
+Mean Rank: 89.631, | MRR: 0.190, | Hits@1: 0.108, | Hits@3: 0.215, | Hits@10: 0.308
+== Epoch: 0090, Loss: 0.61102866
+--- Valid results, using initial lr 0.001
+Mean Rank: 84.615, | MRR: 0.200, | Hits@1: 0.108, | Hits@3: 0.246, | Hits@10: 0.385
+== Epoch: 0095, Loss: 0.59441554
+--- Valid results, using initial lr 0.001
+Mean Rank: 79.985, | MRR: 0.211, | Hits@1: 0.108, | Hits@3: 0.246, | Hits@10: 0.400
+== Epoch: 0100, Loss: 0.56343354
+--- Valid results, using initial lr 0.001
+Mean Rank: 76.000, | MRR: 0.215, | Hits@1: 0.108, | Hits@3: 0.246, | Hits@10: 0.415
+==== Test results, 
+Mean Rank: 102.831, |MRR: 0.179, |Hits@1: 0.077, |Hits@3: 0.215, |Hits@10: 0.385
+
+== Epoch: 0105, Loss: 0.54439673
+--- Valid results, using initial lr 0.001
+Mean Rank: 72.215, | MRR: 0.224, | Hits@1: 0.108, | Hits@3: 0.277, | Hits@10: 0.462
+== Epoch: 0110, Loss: 0.54847356
+--- Valid results, using initial lr 0.001
+Mean Rank: 68.846, | MRR: 0.231, | Hits@1: 0.108, | Hits@3: 0.277, | Hits@10: 0.477
+== Epoch: 0115, Loss: 0.51553472
+--- Valid results, using initial lr 0.001
+Mean Rank: 67.369, | MRR: 0.243, | Hits@1: 0.108, | Hits@3: 0.292, | Hits@10: 0.538
+== Epoch: 0120, Loss: 0.51160441
+--- Valid results, using initial lr 0.001
+Mean Rank: 63.385, | MRR: 0.257, | Hits@1: 0.108, | Hits@3: 0.369, | Hits@10: 0.523
+==== Test results, 
+Mean Rank: 97.077, |MRR: 0.212, |Hits@1: 0.077, |Hits@3: 0.308, |Hits@10: 0.446
+
+== Epoch: 0125, Loss: 0.47726199
+--- Valid results, using initial lr 0.001
+Mean Rank: 61.523, | MRR: 0.266, | Hits@1: 0.108, | Hits@3: 0.369, | Hits@10: 0.538
+== Epoch: 0130, Loss: 0.47192659
+--- Valid results, using initial lr 0.001
+Mean Rank: 60.277, | MRR: 0.281, | Hits@1: 0.108, | Hits@3: 0.400, | Hits@10: 0.569
+== Epoch: 0135, Loss: 0.43390797
+--- Valid results, using initial lr 0.001
+Mean Rank: 58.400, | MRR: 0.289, | Hits@1: 0.108, | Hits@3: 0.431, | Hits@10: 0.569
+== Epoch: 0140, Loss: 0.43228509
+--- Valid results, using initial lr 0.001
+Mean Rank: 57.338, | MRR: 0.303, | Hits@1: 0.108, | Hits@3: 0.477, | Hits@10: 0.569
+==== Test results, 
+Mean Rank: 92.646, |MRR: 0.245, |Hits@1: 0.077, |Hits@3: 0.369, |Hits@10: 0.431
+
+== Epoch: 0145, Loss: 0.43566454
+--- Valid results, using initial lr 0.001
+Mean Rank: 55.738, | MRR: 0.313, | Hits@1: 0.108, | Hits@3: 0.477, | Hits@10: 0.615
+== Epoch: 0150, Loss: 0.39841967
+--- Valid results, using initial lr 0.001
+Mean Rank: 54.631, | MRR: 0.321, | Hits@1: 0.108, | Hits@3: 0.492, | Hits@10: 0.615
+== Epoch: 0155, Loss: 0.38191194
+--- Valid results, using initial lr 0.001
+Mean Rank: 53.954, | MRR: 0.327, | Hits@1: 0.108, | Hits@3: 0.492, | Hits@10: 0.631
+== Epoch: 0160, Loss: 0.36384252
+--- Valid results, using initial lr 0.001
+Mean Rank: 54.231, | MRR: 0.334, | Hits@1: 0.108, | Hits@3: 0.508, | Hits@10: 0.662
+==== Test results, 
+Mean Rank: 87.862, |MRR: 0.259, |Hits@1: 0.077, |Hits@3: 0.415, |Hits@10: 0.462
+
+== Epoch: 0165, Loss: 0.33995763
+--- Valid results, using initial lr 0.001
+Mean Rank: 53.092, | MRR: 0.338, | Hits@1: 0.108, | Hits@3: 0.523, | Hits@10: 0.662
+== Epoch: 0170, Loss: 0.32838303
+--- Valid results, using initial lr 0.001
+Mean Rank: 52.969, | MRR: 0.350, | Hits@1: 0.108, | Hits@3: 0.569, | Hits@10: 0.662
+== Epoch: 0175, Loss: 0.33779627
+--- Valid results, using initial lr 0.001
+Mean Rank: 52.185, | MRR: 0.355, | Hits@1: 0.108, | Hits@3: 0.585, | Hits@10: 0.662
+== Epoch: 0180, Loss: 0.30638964
+--- Valid results, using initial lr 0.001
+Mean Rank: 52.108, | MRR: 0.355, | Hits@1: 0.108, | Hits@3: 0.585, | Hits@10: 0.662
+==== Test results, 
+Mean Rank: 83.923, |MRR: 0.274, |Hits@1: 0.092, |Hits@3: 0.431, |Hits@10: 0.477
+
+== Epoch: 0185, Loss: 0.28358115
+--- Valid results, using initial lr 0.001
+Mean Rank: 51.800, | MRR: 0.366, | Hits@1: 0.123, | Hits@3: 0.585, | Hits@10: 0.677
+== Epoch: 0190, Loss: 0.27493314
+--- Valid results, using initial lr 0.001
+Mean Rank: 51.169, | MRR: 0.382, | Hits@1: 0.154, | Hits@3: 0.585, | Hits@10: 0.677
+== Epoch: 0195, Loss: 0.27277690
+--- Valid results, using initial lr 0.001
+Mean Rank: 51.646, | MRR: 0.394, | Hits@1: 0.169, | Hits@3: 0.585, | Hits@10: 0.677
+== Epoch: 0200, Loss: 0.24809782
+--- Valid results, using initial lr 0.001
+Mean Rank: 51.262, | MRR: 0.396, | Hits@1: 0.169, | Hits@3: 0.600, | Hits@10: 0.677
+==== Test results, 
+Mean Rank: 80.477, |MRR: 0.290, |Hits@1: 0.123, |Hits@3: 0.431, |Hits@10: 0.492
+
+== Epoch: 0205, Loss: 0.25430677
+--- Valid results, using initial lr 0.001
+Mean Rank: 51.246, | MRR: 0.398, | Hits@1: 0.169, | Hits@3: 0.600, | Hits@10: 0.677
+== Epoch: 0210, Loss: 0.22928451
+--- Valid results, using initial lr 0.001
+Mean Rank: 51.077, | MRR: 0.406, | Hits@1: 0.185, | Hits@3: 0.600, | Hits@10: 0.677
+== Epoch: 0215, Loss: 0.22228519
+--- Valid results, using initial lr 0.001
+Mean Rank: 50.985, | MRR: 0.414, | Hits@1: 0.200, | Hits@3: 0.600, | Hits@10: 0.677
+== Epoch: 0220, Loss: 0.22566983
+--- Valid results, using initial lr 0.001
+Mean Rank: 50.508, | MRR: 0.414, | Hits@1: 0.200, | Hits@3: 0.600, | Hits@10: 0.677
+==== Test results, 
+Mean Rank: 77.200, |MRR: 0.314, |Hits@1: 0.169, |Hits@3: 0.431, |Hits@10: 0.492
+
+== Epoch: 0225, Loss: 0.19877158
+--- Valid results, using initial lr 0.001
+Mean Rank: 50.277, | MRR: 0.438, | Hits@1: 0.246, | Hits@3: 0.600, | Hits@10: 0.677
+== Epoch: 0230, Loss: 0.20469241
+--- Valid results, using initial lr 0.001
+Mean Rank: 50.708, | MRR: 0.453, | Hits@1: 0.277, | Hits@3: 0.600, | Hits@10: 0.677
+== Epoch: 0235, Loss: 0.19557969
+--- Valid results, using initial lr 0.001
+Mean Rank: 50.015, | MRR: 0.484, | Hits@1: 0.338, | Hits@3: 0.600, | Hits@10: 0.692
+== Epoch: 0240, Loss: 0.17647814
+--- Valid results, using initial lr 0.001
+Mean Rank: 50.138, | MRR: 0.484, | Hits@1: 0.338, | Hits@3: 0.600, | Hits@10: 0.692
+==== Test results, 
+Mean Rank: 74.462, |MRR: 0.340, |Hits@1: 0.215, |Hits@3: 0.431, |Hits@10: 0.508
+
+== Epoch: 0245, Loss: 0.16394326
+--- Valid results, using initial lr 0.001
+Mean Rank: 49.846, | MRR: 0.484, | Hits@1: 0.338, | Hits@3: 0.600, | Hits@10: 0.692
+== Epoch: 0250, Loss: 0.17103674
+--- Valid results, using initial lr 0.001
+Mean Rank: 49.508, | MRR: 0.492, | Hits@1: 0.354, | Hits@3: 0.600, | Hits@10: 0.692
+== Epoch: 0255, Loss: 0.15770836
+--- Valid results, using initial lr 0.001
+Mean Rank: 49.492, | MRR: 0.492, | Hits@1: 0.354, | Hits@3: 0.600, | Hits@10: 0.692
+== Epoch: 0260, Loss: 0.16939693
+--- Valid results, using initial lr 0.001
+Mean Rank: 48.831, | MRR: 0.499, | Hits@1: 0.369, | Hits@3: 0.600, | Hits@10: 0.692
+==== Test results, 
+Mean Rank: 71.523, |MRR: 0.387, |Hits@1: 0.308, |Hits@3: 0.431, |Hits@10: 0.508
+
+== Epoch: 0265, Loss: 0.15054013
+--- Valid results, using initial lr 0.001
+Mean Rank: 48.785, | MRR: 0.499, | Hits@1: 0.369, | Hits@3: 0.600, | Hits@10: 0.692
+== Epoch: 0270, Loss: 0.13700107
+--- Valid results, using initial lr 0.001
+Mean Rank: 48.262, | MRR: 0.508, | Hits@1: 0.385, | Hits@3: 0.600, | Hits@10: 0.692
+== Epoch: 0275, Loss: 0.15710179
+--- Valid results, using initial lr 0.001
+Mean Rank: 48.323, | MRR: 0.515, | Hits@1: 0.400, | Hits@3: 0.600, | Hits@10: 0.692
+== Epoch: 0280, Loss: 0.14112616
+--- Valid results, using initial lr 0.001
+Mean Rank: 48.185, | MRR: 0.531, | Hits@1: 0.431, | Hits@3: 0.600, | Hits@10: 0.692
+==== Test results, 
+Mean Rank: 68.369, |MRR: 0.404, |Hits@1: 0.338, |Hits@3: 0.431, |Hits@10: 0.508
+
+== Epoch: 0285, Loss: 0.13934536
+--- Valid results, using initial lr 0.001
+Mean Rank: 47.815, | MRR: 0.540, | Hits@1: 0.446, | Hits@3: 0.600, | Hits@10: 0.692
+== Epoch: 0290, Loss: 0.14297066
+--- Valid results, using initial lr 0.001
+Mean Rank: 47.462, | MRR: 0.540, | Hits@1: 0.446, | Hits@3: 0.600, | Hits@10: 0.708
+== Epoch: 0295, Loss: 0.10923870
+--- Valid results, using initial lr 0.001
+Mean Rank: 47.554, | MRR: 0.547, | Hits@1: 0.462, | Hits@3: 0.600, | Hits@10: 0.692
+== Epoch: 0300, Loss: 0.11959983
+--- Valid results, using initial lr 0.001
+Mean Rank: 47.262, | MRR: 0.554, | Hits@1: 0.477, | Hits@3: 0.600, | Hits@10: 0.708
+==== Test results, 
+Mean Rank: 67.215, |MRR: 0.413, |Hits@1: 0.354, |Hits@3: 0.431, |Hits@10: 0.508
+
+==== Test Result, time is 2024-06-26 08:56:45, 
+Mean Rank: 47.262, | MRR: 0.554, | Hits@1: 0.477 | Hits@3: 0.600 | Hits@10: 0.708

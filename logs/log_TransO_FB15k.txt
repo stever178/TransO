@@ -1,0 +1,222 @@
+  2024-07-06 03:32:49, TransO_FB15k training on cuda
+
+== Model: TransO_FB15k, Epoch: 0001, Loss: 0.07092399
+== Model: TransO_FB15k, Epoch: 0002, Loss: 0.01110655
+== Model: TransO_FB15k, Epoch: 0003, Loss: 0.00412162
+== Model: TransO_FB15k, Epoch: 0004, Loss: 0.00180544
+== Model: TransO_FB15k, Epoch: 0005, Loss: 0.00086393
+== Model: TransO_FB15k, Epoch: 0006, Loss: 0.00043009
+== Model: TransO_FB15k, Epoch: 0007, Loss: 0.00022166
+== Model: TransO_FB15k, Epoch: 0008, Loss: 0.00012791
+== Model: TransO_FB15k, Epoch: 0009, Loss: 0.00007318
+== Model: TransO_FB15k, Epoch: 0010, Loss: 0.00004778
+== Model: TransO_FB15k, Epoch: 0011, Loss: 0.00003107
+== Model: TransO_FB15k, Epoch: 0012, Loss: 0.00002068
+== Model: TransO_FB15k, Epoch: 0013, Loss: 0.00001520
+== Model: TransO_FB15k, Epoch: 0014, Loss: 0.00000963
+== Model: TransO_FB15k, Epoch: 0015, Loss: 0.00000626
+== Model: TransO_FB15k, Epoch: 0016, Loss: 0.00000529
+== Model: TransO_FB15k, Epoch: 0017, Loss: 0.00000475
+== Model: TransO_FB15k, Epoch: 0018, Loss: 0.00000384
+== Model: TransO_FB15k, Epoch: 0019, Loss: 0.00000313
+== Model: TransO_FB15k, Epoch: 0020, Loss: 0.00000265
+-- Test results of TransO_FB15k 
+Mean Rank: 743.308, |MRR: 0.092, |Hits@1: 0.011, |Hits@3: 0.136, |Hits@10: 0.291
+== Model: TransO_FB15k, Epoch: 0021, Loss: 0.00000187
+== Model: TransO_FB15k, Epoch: 0022, Loss: 0.00000139
+== Model: TransO_FB15k, Epoch: 0023, Loss: 0.00000089
+== Model: TransO_FB15k, Epoch: 0024, Loss: 0.00000106
+== Model: TransO_FB15k, Epoch: 0025, Loss: 0.00000085
+== Model: TransO_FB15k, Epoch: 0026, Loss: 0.00000064
+== Model: TransO_FB15k, Epoch: 0027, Loss: 0.00000073
+== Model: TransO_FB15k, Epoch: 0028, Loss: 0.00000063
+== Model: TransO_FB15k, Epoch: 0029, Loss: 0.00000053
+== Model: TransO_FB15k, Epoch: 0030, Loss: 0.00000051
+== Model: TransO_FB15k, Epoch: 0031, Loss: 0.00000051
+== Model: TransO_FB15k, Epoch: 0032, Loss: 0.00000059
+== Model: TransO_FB15k, Epoch: 0033, Loss: 0.00000059
+== Model: TransO_FB15k, Epoch: 0034, Loss: 0.00000051
+== Model: TransO_FB15k, Epoch: 0035, Loss: 0.00000052
+== Model: TransO_FB15k, Epoch: 0036, Loss: 0.00000047
+== Model: TransO_FB15k, Epoch: 0037, Loss: 0.00000046
+== Model: TransO_FB15k, Epoch: 0038, Loss: 0.00000046
+== Model: TransO_FB15k, Epoch: 0039, Loss: 0.00000045
+== Model: TransO_FB15k, Epoch: 0040, Loss: 0.00000043
+-- Test results of TransO_FB15k 
+Mean Rank: 743.139, |MRR: 0.092, |Hits@1: 0.011, |Hits@3: 0.136, |Hits@10: 0.290
+== Model: TransO_FB15k, Epoch: 0041, Loss: 0.00000043
+== Model: TransO_FB15k, Epoch: 0042, Loss: 0.00000043
+== Model: TransO_FB15k, Epoch: 0043, Loss: 0.00000042
+== Model: TransO_FB15k, Epoch: 0044, Loss: 0.00000043
+== Model: TransO_FB15k, Epoch: 0045, Loss: 0.00000047
+== Model: TransO_FB15k, Epoch: 0046, Loss: 0.00000042
+== Model: TransO_FB15k, Epoch: 0047, Loss: 0.00000049
+== Model: TransO_FB15k, Epoch: 0048, Loss: 0.00000023
+== Model: TransO_FB15k, Epoch: 0049, Loss: 0.00000048
+== Model: TransO_FB15k, Epoch: 0050, Loss: 0.00000025
+== Model: TransO_FB15k, Epoch: 0051, Loss: 0.00000021
+== Model: TransO_FB15k, Epoch: 0052, Loss: 0.00000037
+== Model: TransO_FB15k, Epoch: 0053, Loss: 0.00000018
+== Model: TransO_FB15k, Epoch: 0054, Loss: 0.00000024
+== Model: TransO_FB15k, Epoch: 0055, Loss: 0.00000023
+== Model: TransO_FB15k, Epoch: 0056, Loss: 0.00000035
+== Model: TransO_FB15k, Epoch: 0057, Loss: 0.00000043
+== Model: TransO_FB15k, Epoch: 0058, Loss: 0.00000027
+== Model: TransO_FB15k, Epoch: 0059, Loss: 0.00000034
+== Model: TransO_FB15k, Epoch: 0060, Loss: 0.00000033
+-- Test results of TransO_FB15k 
+Mean Rank: 742.986, |MRR: 0.092, |Hits@1: 0.011, |Hits@3: 0.136, |Hits@10: 0.290
+== Model: TransO_FB15k, Epoch: 0061, Loss: 0.00000032
+== Model: TransO_FB15k, Epoch: 0062, Loss: 0.00000032
+== Model: TransO_FB15k, Epoch: 0063, Loss: 0.00000031
+== Model: TransO_FB15k, Epoch: 0064, Loss: 0.00000034
+== Model: TransO_FB15k, Epoch: 0065, Loss: 0.00000030
+== Model: TransO_FB15k, Epoch: 0066, Loss: 0.00000054
+== Model: TransO_FB15k, Epoch: 0067, Loss: 0.00000034
+== Model: TransO_FB15k, Epoch: 0068, Loss: 0.00000010
+== Model: TransO_FB15k, Epoch: 0069, Loss: 0.00000039
+== Model: TransO_FB15k, Epoch: 0070, Loss: 0.00000017
+== Model: TransO_FB15k, Epoch: 0071, Loss: 0.00000028
+== Model: TransO_FB15k, Epoch: 0072, Loss: 0.00000015
+== Model: TransO_FB15k, Epoch: 0073, Loss: 0.00000026
+== Model: TransO_FB15k, Epoch: 0074, Loss: 0.00000016
+== Model: TransO_FB15k, Epoch: 0075, Loss: 0.00000016
+== Model: TransO_FB15k, Epoch: 0076, Loss: 0.00000008
+== Model: TransO_FB15k, Epoch: 0077, Loss: 0.00000024
+== Model: TransO_FB15k, Epoch: 0078, Loss: 0.00000023
+== Model: TransO_FB15k, Epoch: 0079, Loss: 0.00000018
+== Model: TransO_FB15k, Epoch: 0080, Loss: 0.00000023
+-- Test results of TransO_FB15k 
+Mean Rank: 743.087, |MRR: 0.092, |Hits@1: 0.011, |Hits@3: 0.136, |Hits@10: 0.290
+== Model: TransO_FB15k, Epoch: 0081, Loss: 0.00000004
+== Model: TransO_FB15k, Epoch: 0082, Loss: 0.00000018
+== Model: TransO_FB15k, Epoch: 0083, Loss: 0.00000003
+== Model: TransO_FB15k, Epoch: 0084, Loss: 0.00000019
+== Model: TransO_FB15k, Epoch: 0085, Loss: 0.00000020
+== Model: TransO_FB15k, Epoch: 0086, Loss: 0.00000020
+== Model: TransO_FB15k, Epoch: 0087, Loss: 0.00000019
+== Model: TransO_FB15k, Epoch: 0088, Loss: 0.00000026
+== Model: TransO_FB15k, Epoch: 0089, Loss: 0.00000019
+== Model: TransO_FB15k, Epoch: 0090, Loss: 0.00000018
+== Model: TransO_FB15k, Epoch: 0091, Loss: 0.00000019
+== Model: TransO_FB15k, Epoch: 0092, Loss: 0.00000004
+== Model: TransO_FB15k, Epoch: 0093, Loss: 0.00000019
+== Model: TransO_FB15k, Epoch: 0094, Loss: 0.00000015
+== Model: TransO_FB15k, Epoch: 0095, Loss: 0.00000015
+== Model: TransO_FB15k, Epoch: 0096, Loss: 0.00000014
+== Model: TransO_FB15k, Epoch: 0097, Loss: 0.00000010
+== Model: TransO_FB15k, Epoch: 0098, Loss: 0.00000004
+== Model: TransO_FB15k, Epoch: 0099, Loss: 0.00000013
+== Model: TransO_FB15k, Epoch: 0100, Loss: 0.00000011
+-- Test results of TransO_FB15k 
+Mean Rank: 743.131, |MRR: 0.092, |Hits@1: 0.011, |Hits@3: 0.136, |Hits@10: 0.290
+== Model: TransO_FB15k, Epoch: 0101, Loss: 0.00000001
+== Model: TransO_FB15k, Epoch: 0102, Loss: 0.00000011
+== Model: TransO_FB15k, Epoch: 0103, Loss: 0.00000011
+== Model: TransO_FB15k, Epoch: 0104, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0105, Loss: 0.00000002
+== Model: TransO_FB15k, Epoch: 0106, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0107, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0108, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0109, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0110, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0111, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0112, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0113, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0114, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0115, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0116, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0117, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0118, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0119, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0120, Loss: 0.00000000
+-- Test results of TransO_FB15k 
+Mean Rank: 743.071, |MRR: 0.092, |Hits@1: 0.011, |Hits@3: 0.136, |Hits@10: 0.290
+== Model: TransO_FB15k, Epoch: 0121, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0122, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0123, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0124, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0125, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0126, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0127, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0128, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0129, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0130, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0131, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0132, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0133, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0134, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0135, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0136, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0137, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0138, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0139, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0140, Loss: 0.00000000
+-- Test results of TransO_FB15k 
+Mean Rank: 743.071, |MRR: 0.092, |Hits@1: 0.011, |Hits@3: 0.136, |Hits@10: 0.290
+== Model: TransO_FB15k, Epoch: 0141, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0142, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0143, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0144, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0145, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0146, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0147, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0148, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0149, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0150, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0151, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0152, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0153, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0154, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0155, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0156, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0157, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0158, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0159, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0160, Loss: 0.00000000
+-- Test results of TransO_FB15k 
+Mean Rank: 743.071, |MRR: 0.092, |Hits@1: 0.011, |Hits@3: 0.136, |Hits@10: 0.290
+== Model: TransO_FB15k, Epoch: 0161, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0162, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0163, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0164, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0165, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0166, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0167, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0168, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0169, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0170, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0171, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0172, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0173, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0174, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0175, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0176, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0177, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0178, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0179, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0180, Loss: 0.00000000
+-- Test results of TransO_FB15k 
+Mean Rank: 743.071, |MRR: 0.092, |Hits@1: 0.011, |Hits@3: 0.136, |Hits@10: 0.290
+== Model: TransO_FB15k, Epoch: 0181, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0182, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0183, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0184, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0185, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0186, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0187, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0188, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0189, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0190, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0191, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0192, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0193, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0194, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0195, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0196, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0197, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0198, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0199, Loss: 0.00000000
+== Model: TransO_FB15k, Epoch: 0200, Loss: 0.00000000
+-- Test results of TransO_FB15k 
+Mean Rank: 743.071, |MRR: 0.092, |Hits@1: 0.011, |Hits@3: 0.136, |Hits@10: 0.290

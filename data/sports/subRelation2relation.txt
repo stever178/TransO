@@ -1,0 +1,3 @@
+concept:athleteledsportsteam	concept:athleteplaysforteam
+concept:athleteplaysforteam	concept:personbelongstoorganization
+concept:coachesteam	concept:personbelongstoorganization
