@@ -3,4 +3,5 @@
 *.pdb
 
 .ipynb*
+checkpoints/*.pt
 checkpoints/*.pth
