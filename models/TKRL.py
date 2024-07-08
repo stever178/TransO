@@ -51,19 +51,17 @@ class TKRL(nn.Module):
         self.ent_emb = Parameter(torch.rand(num_nodes, hidden_channels))
         self.rel_emb = Parameter(torch.rand(num_relations, hidden_channels))
 
-        # self.type_mat = Parameter(torch.rand(num_types, hidden_channels, ).to(device))
         # self.domain_mat = Parameter(torch.rand(num_domains, hidden_channels, ).to(device))
-        self.type_mat = Parameter(torch.rand(num_types, hidden_channels, hidden_channels).to(device))
+        # self.type_mat = Parameter(torch.rand(num_types, hidden_channels, ).to(device))
         self.domain_mat = Parameter(torch.rand(num_domains, hidden_channels, hidden_channels).to(device))
-
-        # shit idea
-        # self.type_mat = Parameter(torch.eye(hidden_channels).expand(num_types, hidden_channels, hidden_channels))
+        self.type_mat = Parameter(torch.rand(num_types, hidden_channels, hidden_channels).to(device))
         # self.domain_mat = Parameter(torch.eye(hidden_channels).expand(num_domains, hidden_channels, hidden_channels))
+        # self.type_mat = Parameter(torch.eye(hidden_channels).expand(num_types, hidden_channels, hidden_channels))
 
-        self.bias_domain = Parameter(torch.empty(hidden_channels))
-        self.bias_type = Parameter(torch.empty(hidden_channels))
+        self.bias_domain = Parameter(torch.empty(num_domains, hidden_channels))
+        self.bias_type = Parameter(torch.empty(num_types, hidden_channels))
 
-        # self.act = nn.R
+        self.act = nn.Tanh()
 
         # reset
         self.reset_parameters(TransE_ent_emb, TransE_rel_emb)
@@ -74,15 +72,17 @@ class TKRL(nn.Module):
             self.rel_emb = Parameter(rel_emb)
         F.normalize(self.rel_emb.data, p=self.p_norm, dim=-1, out=self.rel_emb.data)
 
-        # bound = 6. / math.sqrt(self.hidden_channels)
-        bound = 6.0 / self.hidden_channels
-        nn.init.uniform_(self.ent_emb, -bound, bound)
-        nn.init.uniform_(self.rel_emb, -bound, bound)
+        bound = 6. / math.sqrt(self.hidden_channels)
+        # bound = 6.0 / self.hidden_channels
+        nn.init.uniform_(self.ent_emb, 0.0, bound)
+        nn.init.uniform_(self.rel_emb, 0.0, bound)
+
         # nn.init.uniform_(self.type_mat, -bound, bound)
         # nn.init.uniform_(self.domain_mat, -bound, bound)
-
         # nn.init.uniform_(self.type_mat, bound, 1.0)
         # nn.init.uniform_(self.domain_mat, bound, 1.0)
+        nn.init.uniform_(self.type_mat, bound, 1.0)
+        nn.init.uniform_(self.domain_mat, bound, 1.0)
 
         nn.init.zeros_(self.bias_domain)
         nn.init.zeros_(self.bias_type)
@@ -99,7 +99,6 @@ class TKRL(nn.Module):
 
         head = F.normalize(head, p=self.p_norm, dim=-1)
         tail = F.normalize(tail, p=self.p_norm, dim=-1)
-        # rel = F.normalize(rel, p=self.p_norm, dim=-1)
 
         return ((head + rel) - tail).norm(p=self.p_norm, dim=-1)
 
@@ -112,10 +111,10 @@ class TKRL(nn.Module):
         head = self.ent_emb[head_index]
         rel = self.rel_emb[rel_index]
         tail = self.ent_emb[tail_index]
-
+        #
         head = F.normalize(head, p=self.p_norm, dim=-1)
         tail = F.normalize(tail, p=self.p_norm, dim=-1)
-        # rel = F.normalize(rel, p=self.p_norm, dim=-1)
+        rel = F.normalize(rel, p=self.p_norm, dim=-1)
 
         head_domain_index = self.rel2domain_ht[rel_index, 0]
         tail_domain_index = self.rel2domain_ht[rel_index, 1]
@@ -126,12 +125,10 @@ class TKRL(nn.Module):
         # tail = self.domain_mat[tail_domain_index] * tail
         head = torch.matmul(self.domain_mat[head_domain_index], head.unsqueeze(-1)).squeeze(-1)
         tail = torch.matmul(self.domain_mat[tail_domain_index], tail.unsqueeze(-1)).squeeze(-1)
-        head = head + self.bias_domain
-        tail = tail + self.bias_domain
+        head = head + self.bias_domain[head_domain_index]
+        tail = tail + self.bias_domain[tail_domain_index]
         # head = self.bn_head(head) # shit
         # tail = self.bn_tail(tail)
-        # head = self.act(head) # shit
-        # tail = self.act(tail)
 
         # head_type_mask = self.ent2type_mask[head_index].to(head.device)
         # head_type_count = head_type_mask.sum(dim=1)
@@ -152,8 +149,10 @@ class TKRL(nn.Module):
         # tail = self.type_mat[tail_type_index] * tail
         head = torch.matmul(self.type_mat[head_type_index], head.unsqueeze(-1)).squeeze(-1)
         tail = torch.matmul(self.type_mat[tail_type_index], tail.unsqueeze(-1)).squeeze(-1)
-        head = head + self.bias_type
-        tail = tail + self.bias_type
+        head = head + self.bias_type[head_type_index]
+        tail = tail + self.bias_type[tail_type_index]
+        head = self.act(head) #
+        tail = self.act(tail)
 
         return ((head + rel) - tail).norm(p=self.p_norm, dim=-1)
 
@@ -221,7 +220,7 @@ class TKRL_type_only(TKRL):
             ent2type_mask: Tensor = None,
 
             hidden_channels: int = 100,
-            p_norm: float = 1.0,
+            p_norm: float = 2.0,
             margin_1: float = 1.0,
             # margin_2: float = 0.25,
             TransE_ent_emb: Tensor = None,
@@ -229,6 +228,7 @@ class TKRL_type_only(TKRL):
     ):
         super().__init__(num_nodes, num_relations, num_types, num_domains,
                          rel2type_ht, rel2domain_ht, ent2type_mask,
+                         hidden_channels, p_norm, margin_1,
                          TransE_ent_emb=TransE_ent_emb, TransE_rel_emb=TransE_rel_emb
                          )
 
@@ -236,17 +236,19 @@ class TKRL_type_only(TKRL):
             head = self.ent_emb[head_index]
             rel = self.rel_emb[rel_index]
             tail = self.ent_emb[tail_index]
-
+            #
             head = F.normalize(head, p=self.p_norm, dim=-1)
             tail = F.normalize(tail, p=self.p_norm, dim=-1)
             rel = F.normalize(rel, p=self.p_norm, dim=-1)
 
             head_type_index = self.rel2type_ht[rel_index, 0]
             tail_type_index = self.rel2type_ht[rel_index, 1]
-
+            #
             head = torch.matmul(self.type_mat[head_type_index], head.unsqueeze(-1)).squeeze(-1)
+            head = head + self.bias_type[head_type_index]
             tail = torch.matmul(self.type_mat[tail_type_index], tail.unsqueeze(-1)).squeeze(-1)
-            head = head + self.bias_type
-            tail = tail + self.bias_type
+            tail = tail + self.bias_type[tail_type_index]
 
+            head = self.act(head)
+            tail = self.act(tail)
             return ((head + rel) - tail).norm(p=self.p_norm, dim=-1)

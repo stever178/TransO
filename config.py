@@ -26,11 +26,11 @@ class TrainParam_TransE():
 
     # training
     train_flag = True
-    batch_size = 1024
-    EPOCH = 500
-    valid_steps = EPOCH // 20
+    batch_size = 1024 * 2
+    EPOCH = 800
     test_steps = 50  # EPOCH // 20
     save_steps = test_steps
+    valid_steps = EPOCH // 20
 
     # learning rate
     lr = 0.1
@@ -117,18 +117,18 @@ class TrainParam_TKRL:
 
     train_flag = True
     batch_size = 1024
-    EPOCH = 300
-    valid_steps = EPOCH + 10
-    test_steps = 20
+    EPOCH = 800
+    test_steps = 50
     save_steps = test_steps
+    valid_steps = EPOCH + 10
 
     lr = 0.1
     eta_min = 0.01
-    use_scheduler = True
+    use_scheduler = False
 
 class TrainParam_TKRL_type_only(TrainParam_TKRL):
-    model_name = "TKRL_type_only" + unif
-    # model_name = "TKRL_type_only"
+    # model_name = "TKRL_type_only" + unif
+    model_name = "TKRL_type_only"
 
 class TrainParam_TransO:
     # model_name = "TransO_Tanhshrink"
@@ -155,10 +155,10 @@ class TrainParam_TransO:
     use_scheduler = True
 
 #
+# MODEL = TransE
+# param = TrainParam_TransE
 MODEL = TKRL
 param = TrainParam_TKRL
 # MODEL = TKRL_type_only
 # param = TrainParam_TKRL_type_only
-# MODEL = TransE
-# param = TrainParam_TransE
 # param.SAVE_TENSOR = False

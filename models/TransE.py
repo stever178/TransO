@@ -27,7 +27,7 @@ class TransE(nn.Module):
             # rp_pair: Tensor = None,
 
             hidden_channels: int = 100,
-            p_norm: float = 1.0,
+            p_norm: float = 2.0,
             margin_1: float = 1.0,
             # margin_2: float = 0.25,
     ):

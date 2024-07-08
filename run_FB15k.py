@@ -193,7 +193,9 @@ if param.save_tensor:
     rel_lr_sum[:, 1] = rel2right_ent.sum(dim=1) / torch.count_nonzero(rel2right_ent, dim=1)
     # rnd_max = 100
     rel_ht_pr = rel_lr_sum[:, 1] / rel_lr_sum.sum(dim=1)# * rnd_max
+    assert (rel_ht_pr <= 1).all()
     gen_pr = torch.rand(rel_ht_pr.size())
+    assert (gen_pr <= 1).all()
 
     # negative sampling
     tt = time.strftime('%H:%M:%S', time.localtime())
@@ -206,27 +208,16 @@ if param.save_tensor:
     neg_train_edge_type = torch.empty(len_ori * 2, dtype=torch.long)
 
     # all_ent_set = set(range(ent_num))
-    k = 10
-    for ii in tqdm(range(len_ori)):
-        rnd_triple_id = torch.randint(0, len_ori, (1,)).item()
-
-        head_id = ori_train_edge_index[0, rnd_triple_id].item()
-        tail_id = ori_train_edge_index[1, rnd_triple_id].item()
-        rel_id = ori_train_edge_type[rnd_triple_id].item()
+    def neg_sample_ent(pos, head_id, rel_id, tail_id, ent_num, sr2o, rel_ht_pr, gen_pr):
         tmp_h_type = rel2type_ht_tensor[rel_id, 0].item()
         tmp_t_type = rel2type_ht_tensor[rel_id, 1].item()
 
-        # change head/tail entity
-        pos = ii + len_ori
-        train_edge_index[0, pos] = head_id
-        train_edge_index[1, pos] = tail_id
-        train_edge_type[pos] = rel_id
-        #
         neg_train_edge_type[pos] = rel_id
         neg_train_edge_index[0, pos] = head_id
         neg_train_edge_index[1, pos] = tail_id
-        #
+        # replace head/tail
         ent_id = torch.randint(0, ent_num, (1,)).item()
+        k = 10
         condition = gen_pr[rel_id] < rel_ht_pr[rel_id]
         if condition:
             # replace tail
@@ -249,16 +240,7 @@ if param.save_tensor:
         # sel_id = torch.randint(0, len(ready_ent), (1,)).item()
         # ent_id = ready_ent[sel_id]
 
-        # change relation
-        head_id = ori_train_edge_index[0, ii].item()
-        tail_id = ori_train_edge_index[1, ii].item()
-        rel_id = ori_train_edge_type[ii].item()
-        #
-        pos = ii
-        train_edge_index[0, pos] = head_id
-        train_edge_index[1, pos] = tail_id
-        train_edge_type[pos] = rel_id
-        #
+    def neg_sample_rel(pos, head_id, tail_id, rel_num, sr2o):
         neg_train_edge_index[0, pos] = head_id
         neg_train_edge_index[1, pos] = tail_id
         #
@@ -266,9 +248,45 @@ if param.save_tensor:
         while (sr2o.get((head_id, neg_rel)) != None) and (tail_id in sr2o[(head_id, neg_rel)]):
             neg_rel = torch.randint(0, rel_num, (1,)).item()
         neg_train_edge_type[pos] = neg_rel
-        # print(f"{ii}: {head_id}, {rel_id}, {tail_id}, {ent_id}, {neg_rel}")
 
+    p_er_gate = 1.0 * DATA.ENT_NUM / (DATA.ENT_NUM + DATA.REL_NUM)
+    for ii in tqdm(range(len_ori)):
+        # 1. change head/tail entity ====
+        # 1.1 positive sample
+        rnd_triple_id = torch.randint(0, len_ori, (1,)).item()
+        # rnd_triple_id = ii
+        #
+        head_id = ori_train_edge_index[0, rnd_triple_id].item()
+        tail_id = ori_train_edge_index[1, rnd_triple_id].item()
+        rel_id = ori_train_edge_type[rnd_triple_id].item()
+        pos = ii
+        train_edge_index[0, pos] = head_id
+        train_edge_index[1, pos] = tail_id
+        train_edge_type[pos] = rel_id
+        # 1.2 negative sample
+        if torch.rand(1).item() < p_er_gate:
+            neg_sample_ent(pos, head_id, rel_id, tail_id, ent_num, sr2o, rel_ht_pr, gen_pr)
+        else:
+            neg_sample_rel(pos, head_id, tail_id, rel_num, sr2o)
+
+        # 2. change relation ====
+        # 2.1 using reverse direction
+        tail_id = ori_train_edge_index[0, ii].item()
+        head_id = ori_train_edge_index[1, ii].item()
+        rel_id = ori_train_edge_type[ii].item()
+        pos = ii + len_ori
+        train_edge_index[0, pos] = head_id
+        train_edge_index[1, pos] = tail_id
+        train_edge_type[pos] = rel_id
+        # 2.2 negative sample
+        if torch.rand(1).item() < p_er_gate:
+            neg_sample_ent(pos, head_id, rel_id, tail_id, ent_num, sr2o, rel_ht_pr, gen_pr)
+        else:
+            neg_sample_rel(pos, head_id, tail_id, rel_num, sr2o)
+
+        # print(f"{ii}: {head_id}, {rel_id}, {tail_id}, {ent_id}, {neg_rel}")
     # end for
+
     name = 'train_edge_index.pt'
     torch.save(train_edge_index, f"{data_load_path}/{name}")
     name = 'train_edge_type.pt'
@@ -282,10 +300,10 @@ if param.save_tensor:
     print("*" * star_num, f"{tt}, train data saving as tensors")
 # end save
 
-name = 'ori_train_edge_index.pt'
-ori_train_edge_index = torch.load(f"{data_load_path}/{name}").to(device)
-name = 'ori_train_edge_type.pt'
-ori_train_edge_type = torch.load(f"{data_load_path}/{name}").to(device)
+# name = 'ori_train_edge_index.pt'
+# ori_train_edge_index = torch.load(f"{data_load_path}/{name}").to(device)
+# name = 'ori_train_edge_type.pt'
+# ori_train_edge_type = torch.load(f"{data_load_path}/{name}").to(device)
 
 name = 'train_edge_index.pt'
 train_edge_index = torch.load(f"{data_load_path}/{name}").to(device)
@@ -315,11 +333,8 @@ batch_size = param.batch_size
 if param.model_name[-4:] == "unif":
     len_ori = len(train_edge_type) // 2
     assert len_ori > 2
-    assert len_ori == len(ori_train_edge_type)
-    assert torch.equal(ori_train_edge_index, train_edge_index[:, :len_ori])
-
-    train_edge_index = train_edge_index[:, :len_ori]
-    train_edge_type = train_edge_type[:len_ori]
+    # assert len_ori == len(ori_train_edge_type)
+    # assert torch.equal(ori_train_edge_index, train_edge_index[:, :len_ori])
     # train_edge_index = ori_train_edge_index
     # train_edge_type = ori_train_edge_type
     neg_train_edge_index = None
@@ -440,6 +455,8 @@ def test_final():
     with open(log_path, 'a') as file:
         file.writelines(log_str)
 
+    return rank, mrr, hits_at_1, hits_at_3, hits_at_10
+
 # =====================================================================================
 # Train
 if param.train_flag:
@@ -455,7 +472,7 @@ if param.train_flag:
         tt = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
         file.writelines(f"  {tt}, {model_name} training on {device}\n\n")
 
-    min_loss = 1e5
+    best_hits10 = 0.300
     encoder_loss_list = []
     decoder_loss_list = []
 
@@ -499,14 +516,20 @@ if param.train_flag:
                 with open(log_path, 'a') as file:
                     file.writelines(log_str)
 
-            if epoch % param.test_steps == 0:
-                test_final()
+            if epoch % param.save_steps == 0:
+                rank, mrr, hits_at_1, hits_at_3, hits_at_10 = test_final()
+                if best_hits10 <= hits_at_10:
+                    best_hits10 = hits_at_10
+                    save_model(save_path, model_name, model, optimizer)
+        # end train
 
-            if epoch % param.save_steps == 0 and loss < min_loss:
-                min_loss = loss
-                save_model(save_path, model_name, model, optimizer)
+    if MODEL == TransE:
+        print("*" * star_num, f"saving TransE embeddings")
+        torch.save(model.ent_emb, f"{model_path}TransE_ent_emb.pt")
+        torch.save(model.rel_emb, f"{model_path}TransE_rel_emb.pt")
 
     print(f"Training over", "-=" * star_num)
+# end train
 
 # =====================================================================================
 # Test
@@ -520,7 +543,4 @@ if param.test_flag:
         file.writelines(f"==== {tt}, {model_name} testing on {device}")
 
     test_final()
-
-    if MODEL == TransE:
-        torch.save(model.ent_emb, f"{model_path}TransE_ent_emb.pt")
-        torch.save(model.rel_emb, f"{model_path}TransE_rel_emb.pt")
+# end Test

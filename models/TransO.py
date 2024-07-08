@@ -66,17 +66,17 @@ class TransO(nn.Module):
         self.reset_parameters()
 
     def reset_parameters(self):
+        F.normalize(self.rel_emb.data, p=self.p_norm, dim=-1, out=self.rel_emb.data)
+
         # bound = 6. / math.sqrt(self.hidden_channels)
-        bound = 1.0 / self.hidden_channels
+        bound = 6.0 / self.hidden_channels
 
         nn.init.uniform_(self.ent_emb, 0.0, bound)
         nn.init.uniform_(self.rel_emb, 0.0, bound)
-        nn.init.uniform_(self.pro_rel, bound, 1.0)
 
+        nn.init.uniform_(self.pro_rel, bound, 1.0)
         nn.init.uniform_(self.type_mat, bound, 1.0)
         nn.init.uniform_(self.domain_mat, bound, 1.0)
-
-        F.normalize(self.rel_emb.data, p=self.p_norm, dim=-1, out=self.rel_emb.data)
 
     def forward(
             self,
